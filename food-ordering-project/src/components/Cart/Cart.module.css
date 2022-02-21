@@ -1,0 +1,66 @@
+.cart-items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-height: 20rem;
+    overflow: auto;
+  }
+  
+  .total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+  
+  .actions {
+    text-align: right;
+  }
+  
+  .actions button {
+    font: inherit;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #bd7e09f6;
+    padding: 0.5rem 2rem;
+    border-radius: 25px;
+    margin-left: 1rem;
+  }
+  
+  .actions button:hover,
+  .actions button:active {
+    background-color: #9e5c06;
+    border-color: #9e5c06;
+    color: white;
+  }
+  
+  .actions .button--alt {
+    color: #bd7e09f6;
+  }
+  
+  .actions .button {
+    background-color: #bd7e09f6;
+    color: white;
+  }
+
+  .isSubmitLoading {
+    position: fixed;
+    left: 45%;
+    top: 70%;
+    border: 12px solid #f3f3f3; /* Light grey */
+    border-top: 12px solid #bd7e09f6; /* gold */
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    animation: spin 2s linear infinite;
+  }
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
